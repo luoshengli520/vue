@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <form action="#">
+            <!-- 第一个参数是value
+                第二个是key
+                第三个是索引
+             -->
+            <h2 v-for="(value, key, index) in info" :key="value">{{key + ':' + value}}</h2>
+        </form>
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                info : {
+                    name: 'sb',
+                    age: '22',
+                    sex: '男'
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

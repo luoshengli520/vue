@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- 阻止事件冒泡 .stop -->
+        <div @click="but1">
+            阿斯顿福建；
+            <input @click.stop="but2" type="button" value="按钮">
+        </div>
+
+        <!-- 阻止 html 默认事件 .prevent-->
+        <form action="Baidu">
+            <input type="submit" value="提交">
+            <input type="submit" value="提交" @click.prevent="but3">
+        </form>
+
+        <!-- 监听莫个键盘的按键的点击事件 -->
+        <input type="text" @keyup.enter="keyUp">
+        <input type="text" @keyup.a="keyUp">
+
+        <!-- .once：事件只触发一次 -->
+        <input type="button" @click.once="getOnce">
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+
+            },
+            methods : {
+                but1 () {
+                    console.log('div but1');
+                },
+                but2 () {
+                    console.log('input but2')
+                },
+                but3 () {
+                    console.log('input but3')
+                },
+                keyUp () {
+                    console.log('keyUp');
+                },
+                getOnce () {
+                    console.log('once test')
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

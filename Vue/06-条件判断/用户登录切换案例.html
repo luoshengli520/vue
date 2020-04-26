@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- 小问题分析：
+            当切换的input里面有内容时，里面的内容会被保留
+                原因：虚拟DOM会比对这两个是可用的，就会拿原来的label和input，会把原来的属性值改变，在显示
+                    但是用户输入的不会被改变
+                    简单说就是把原来的复用，改变其里面的属性值
+                怎么让它不复用
+                    加上key，key值不相同就不会进行复用
+         -->
+        <span v-if="isFlag">
+            <label for="userName">用户账号</label>
+            <input type="text" id="userName" placeholder="用户账号" key="userName" />
+        </span>
+        <span v-else>
+            <label for="email">用户账号</label>
+            <input type="email" id="email" placeholder="邮箱账号" key="email" />
+        </span>
+
+        <button @click="isFlag">切换</button>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                isFlag : true
+            }
+        })
+    </script>
+
+</body>
+</html>

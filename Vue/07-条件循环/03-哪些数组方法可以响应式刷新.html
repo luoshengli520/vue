@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                d : ['1','2','3']
+            },
+            methods : {
+                test () {
+                    // 1、push 往数组最后添加一个元素
+                    // 2、pop 删除最后一位元素
+                    // 3、shift 删除第一个元素
+                    // 4、unshift 在数组最前面添加元素
+                    // 5、splice (从哪开始,删除几个,插入的元素) 删除/插入/替换
+                    // 6、sort 排序
+                    // 7、reverse 反转
+                    /**
+                     * 注意：this.d[0] = 4;V
+                     * 不是响应式的
+                     * vue自带了一个方法进行修改
+                     * ue.set(修改的对象,那个元素,修改的值)
+                     */
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

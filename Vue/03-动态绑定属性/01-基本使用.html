@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <input type="text" name="jj" v-bind:value="message">
+        <!-- v-bind 语法糖 也就是简写 -->
+        <input type="text" name="jj" :value="message">
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                message : '傻逼，你好'
+            }
+        })
+    </script>
+
+</body>
+</html>

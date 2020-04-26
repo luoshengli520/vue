@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!-- v-text 展示文本，不够灵活，不能拼接字段 -->
+
+    <div id="app">
+        <h2 v-text="message"></h2>
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                message : '傻逼，你好'
+            }
+        })
+    </script>
+
+</body>
+</html>

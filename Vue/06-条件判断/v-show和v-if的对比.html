@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- v-if 当我们条件为false时，此元素根本不在DOM中
+    v-show 相当于display: none;
+ -->
+
+    <div id="app">
+        <span v-if="isShow">jj</span>
+        <span v-show="isShow">jj</span>
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                isShow : true
+            }
+        })
+    </script>
+
+</body>
+</html>

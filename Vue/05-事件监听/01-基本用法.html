@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="add">
+    <h2>当前值：{{count}}</h2>
+    <!--可以省略'()'-->
+    <!--<button v-on:click = "count++">+</button>-->
+    <!--<button v-on:click = "count&#45;&#45;">-</button>-->
+    <!-- 语法糖操作 -->
+    <!-- 默认会把第一个参数赋值为event 对象 -->
+    <button @click = "add">+</button>
+    <!-- 等同上面 -->
+    <!--<button @click = "add()">+</button>-->
+    <!-- 如果想在其他参数中赋值使用 $event
+        不加 '' 符号就会被当成变量解析
+        加上 '' 符号就会被当成字符串解析
+     -->
+    <button @click = "sub('abc',$event)">-</button>
+</div>
+
+<script src="../js/vue.js"></script>
+
+<script>
+    const add = new Vue({
+        el: '#add',
+        data: {
+            count: 0
+        },
+        methods: {
+            // 对象的一个增强写法
+            add(event) {
+                console.log(event);
+                this.count++;
+            },
+            sub(abc,event) {
+                console.log(abc);
+                this.count--;
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

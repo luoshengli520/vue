@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .color1{
+            color: red;
+        }
+        .color2{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <!-- 对象 -->
+        <h2 @click="h2Click" :class="{color1 : color1 , color2 : color2}">{{message}}</h2>
+        <!-- 方法返回对象 -->
+        <h2 @click="h2Click" :class="getClass()">{{message}}</h2>
+        <!-- 数组语法 不加引号就是变量 加上就是字符串 -->
+        <h2 @click="h2Click" :class="['color1' , line]">{{message}}</h2>
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                message : '傻逼，你好',
+                color1 : true,
+                color2 : false,
+                line : 'aaa'
+            },
+            methods : {
+                h2Click : function () {
+                    this.color1 = !this.color1;
+                    this.color2 = !this.color2;
+                },
+                getClass : function () {
+                    return {color1 : this.color1 , color2 : this.color2};
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

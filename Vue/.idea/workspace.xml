@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af30dc47-b974-4c3b-b0b2-c0e9054aa3fa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1atjuhfpjG1wb8OCGngORb8zNnw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/05-事件监听" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05-事件监听" />
+      <recent name="$PROJECT_DIR$/03-动态绑定属性" />
+      <recent name="$PROJECT_DIR$/01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/07-条件循环" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.02-v-for遍历对象.html">
+    <configuration name="01-基本用法.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Vue/05-事件监听/01-基本用法.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="01-v-for遍历数组.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Vue/07-条件循环/01-v-for遍历数组.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="02-v-for遍历对象.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Vue/07-条件循环/02-v-for遍历对象.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="02-v-on修饰符-诡异事件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Vue/05-事件监听/02-v-on修饰符-诡异事件.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="02-v-on修饰符.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Vue/05-事件监听/02-v-on修饰符.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.02-v-for遍历对象.html" />
+        <item itemvalue="JavaScript Debug.01-v-for遍历数组.html" />
+        <item itemvalue="JavaScript Debug.02-v-on修饰符-诡异事件.html" />
+        <item itemvalue="JavaScript Debug.02-v-on修饰符.html" />
+        <item itemvalue="JavaScript Debug.01-基本用法.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af30dc47-b974-4c3b-b0b2-c0e9054aa3fa" name="Default Changelist" comment="" />
+      <created>1587562008965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587562008965</updated>
+      <workItem from="1587562013157" duration="46754000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="353" y="26" key="SettingsEditor" timestamp="1587776420291">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="353" y="26" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1587776420291" />
+    <state x="82" y="56" width="1035" height="770" key="dock-window-1" timestamp="1587775956535">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="82" y="56" width="1035" height="770" key="dock-window-1/0.23.1440.830@0.23.1440.830" timestamp="1587775956535" />
+    <state x="1085" y="190" key="run.anything.popup" timestamp="1587627236419">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="1085" y="190" key="run.anything.popup/0.23.1440.830@0.23.1440.830" timestamp="1587627236419" />
+    <state x="553" y="100" width="670" height="676" key="search.everywhere.popup" timestamp="1587815928464">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="553" y="100" width="670" height="676" key="search.everywhere.popup/0.23.1440.830@0.23.1440.830" timestamp="1587815928464" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/08-书籍购物车案例/index.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

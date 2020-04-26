@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="add">{{message}}</div>
+
+</body>
+
+<!-- 引用Vuejs -->
+<script src="../js/vue.js"></script>
+
+<script>
+    // let(变量) 、 const（常量）
+    // 声明式编程
+    const app = new Vue({
+        el : '#add',// 用于挂载要管理的元素
+        data : {// 定义数据
+            message : '傻逼，你好'
+        }
+    })
+</script>
+
+</html>

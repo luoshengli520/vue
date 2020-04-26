@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <!-- 第一个参数是数组里面的值，
+                第二个是遍历的索引值
+             -->
+            <li v-for="(item,index) in names">{{index + ':' + item}}</li>
+        </ul>
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                names : ['1','2','3']
+            }
+        })
+    </script>
+
+</body>
+</html>
