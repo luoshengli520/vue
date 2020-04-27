@@ -6,5 +6,23 @@
 </head>
 <body>
 
+    <div id="app">
+        <!-- v-model 的基本使用 -->
+        <input type="text" v-model="message" />
+        <!-- 实现方式 -->
+        <input type="text" :value="message" @input="message = $event.target.value">
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                message: '123'
+            }
+        })
+    </script>
+
 </body>
 </html>
