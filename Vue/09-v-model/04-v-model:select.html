@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- select 单选 -->
+        <select v-model="fruit">
+            <option value="葡萄">葡萄</option>
+            <option value="傻逼果">傻逼果</option>
+            <option value="香蕉">🍌</option>
+        </select>
+        <h2>当前要买的水果：{{fruit}}</h2>
+
+        <!-- select 多选 也是第一见 -->
+        <select v-model="fruits" multiple>
+            <option value="葡萄">葡萄</option>
+            <option value="傻逼果">傻逼果</option>
+            <option value="香蕉">🍌</option>
+        </select>
+        <h2>当前要买的水果：{{fruits}}</h2>
+
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                fruit: '傻逼果'
+                ,fruits: []
+            }
+        })
+    </script>
+
+</body>
+</html>

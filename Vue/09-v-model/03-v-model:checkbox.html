@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- 单选情况 -->
+        <label for="agreement">
+            <input v-model="agreement" id="agreement" type="checkbox">同意协议
+        </label>
+        <h2>是否同意：{{agreement}}</h2>
+        <button :disabled="!agreement">下一步</button>
+
+        <br />
+
+        <!-- 复选情况 -->
+        <label for="basketball">
+            <input v-model="hobbyList" value="篮球" id="basketball" type="checkbox">篮球
+        </label>
+        <label for="football">
+            <input v-model="hobbyList" value="足球" id="football" type="checkbox">足球
+        </label>
+        <label for="press">
+            <input v-model="hobbyList" value="傻逼" id="press" type="checkbox">傻逼
+        </label>
+        <h2>爱好有：{{hobbyList}}</h2>
+
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+                agreement: false
+                ,hobbyList: []
+            }
+        })
+    </script>
+
+</body>
+</html>

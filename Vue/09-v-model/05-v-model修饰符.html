@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- lazy
+            默认情况下,mode獸认是在 input事件中同步输入框的数据的。
+            也就是说,一日有数据发生改变对应的data中的数据就会自动发生改变。
+            lazy修饰符可以让敌据在失去焦点或者回车时才会更新
+         -->
+
+        <!-- number
+            默认情况下,在输入框中无论们输入的是字母还是数字,都会被当做字符串类型进行处理。
+            但是如果我们希望处理的是数字类型,那么最好直接将内客当做数字处理。
+            number修饰符可以让在输入框中输入的内容自动转成数字类型
+         -->
+
+        <!-- trim
+            如果输入的内客首尼有很多空格,通常我们希望将其去除
+            trim修饰符可以过滤内客左右两边的空格
+         -->
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+        const app = new Vue({
+            el : '#app',
+            data : {
+
+            }
+        })
+    </script>
+
+</body>
+</html>
