@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+
+    </div>
+
+    <!-- 引入式 script 标签 -->
+    <script type="text/x-template" id="cmp1">
+        <div>
+            <h1>dasf</h1>
+        </div>
+    </script>
+
+    <!-- 引入式 template 标签 -->
+    <template id="cmp2">
+        <div>
+            <h2>asdfasdf</h2>
+            <h3>{{title}}</h3>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+
+    <script>
+
+        // 全局简化
+        Vue.component('sfad' , {
+            template : ``
+        })
+
+        // 引入式
+        Vue.component('sfad' , {
+            template : `#cmp2`, // cmp1 也行
+            // 组件数据存放
+            data () {
+                return {
+                    title : 'fads'
+                }
+            }
+        })
+
+
+        const app = new Vue({
+            el : '#app',
+            data : {
+
+            },
+            components : {
+                // 局内简化
+                cmp : {
+                    template : ``
+                },
+                cmp0 : {
+                    template : `#cmp1`
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
